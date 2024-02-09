@@ -27,7 +27,7 @@ export function Navigation() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Pages
+          Home
         </a>
       </Typography>
       <Typography
@@ -37,7 +37,7 @@ export function Navigation() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Account
+          Projects
         </a>
       </Typography>
       <Typography
@@ -47,7 +47,7 @@ export function Navigation() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Blocks
+          About Us
         </a>
       </Typography>
       <Typography
@@ -57,14 +57,14 @@ export function Navigation() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Docs
+          Join Our Team
         </a>
       </Typography>
     </ul>
   );
 
   return (
-    <div className=" static top-0  w-screen border-none ">
+    <div className=" fixed top-0 z-30 w-screen border-none ">
       <Navbar
         style={{ backgroundColor: "#0C3959" }}
         className=" h-max max-w-full rounded-none sm:px-4 sm:py-2 px-40 py-4 backdrop-blur-none bg-opacity-none border-none backdrop-filter-none "
@@ -79,10 +79,10 @@ export function Navigation() {
           >
             MÅNE Labs
           </Typography></div>
-          <div className="mr-4  ">{navList}</div>
+          <div className="mr-4 sm:hidden  ">{navList}</div>
 
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-x-1">
+            <div className="flex items-center gap-x-1  sm:hidden">
               <Button
               style={{backgroundColor:"#A8E4F9"}}
                variant="text" size="sm" className=" inline-block">
@@ -130,14 +130,13 @@ export function Navigation() {
         </div>
         <MobileNav open={openNav} className="hiddem sm:block">
           {navList}
-          <div className="flex items-center gap-x-1">
-            <Button fullWidth variant="text" size="sm" className="">
-              <span>Log In</span>
-            </Button>
-            <Button fullWidth variant="gradient" size="sm" className="">
-              <span>Sign in</span>
-            </Button>
-          </div>
+          <div className="flex items-center gap-x-1 ">
+              <Button
+              style={{backgroundColor:"#A8E4F9"}}
+               variant="text" size="sm" className=" inline-block">
+                <span>Build your project</span>
+              </Button>
+            </div>
         </MobileNav>
       </Navbar>
     </div>

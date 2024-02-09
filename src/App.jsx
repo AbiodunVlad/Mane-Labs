@@ -5,7 +5,7 @@ import './App.css'
 import { Navigation } from './Components/Navbar'
 import { Routes, Route } from 'react-router'
 import Home from './Pages/Home'
-
+import Footer from './Components/Footer'
 function App() {
 
   return (
@@ -16,6 +16,7 @@ function App() {
 <Route path='/' element={<Home/>}/>
 {/* <Route path='/about' element={<About/>}/> */}
 </Routes>
+<Footer />
        </div>
     </>
   )
