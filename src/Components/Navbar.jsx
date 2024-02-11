@@ -7,6 +7,7 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
+import { NavLink } from "react-router-dom";
 
 export function Navigation() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -46,9 +47,9 @@ export function Navigation() {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <NavLink to="aboutus" className="flex items-center">
           About Us
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
