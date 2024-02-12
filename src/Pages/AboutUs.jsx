@@ -38,7 +38,7 @@ const AboutUs = () => {
       };
 
   return (
-    <><div className="sm:mt-10 mt-24 w-screen py-5 px-40">
+    <><div className="sm:mt-16 mt-24 w-full py-5 px-40 sm:px-5">
           <h1 className="text-center">About MÅNE Labs</h1>
 
           <p className=" py-10">
@@ -77,7 +77,7 @@ const AboutUs = () => {
                 clickable: true,
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper w-screen "
+              className="mySwiper w-screen   "
             >
               <SwiperSlide>
               <span className=" p-4 w-60 m-auto h-74 flex flex-col justify-center ">

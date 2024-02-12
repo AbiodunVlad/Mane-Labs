@@ -2,7 +2,7 @@ import React from "react";
 
 const Section1 = () => {
   return (
-    <div className="px-40 sm:px-5  w-screen ">
+    <div className="px-40 sm:px-5  w-full ">
     <div className="flex  sm:flex-col-reverse justify-between py-10">
       <div className="py-40 sm:py-10">
         <span>
@@ -25,7 +25,7 @@ const Section1 = () => {
         </div>
         </div>
         <div className="">
-          <img src="./images/image1.png" className=" rounded-3xl sm:h-full" style={{width:"600px", height:"460px"}}></img>
+          <img src="./images/image1.png" className=" rounded-3xl sm:h-full sm:w-full" style={{width:"600px", }}></img>
         </div>
       </div>
     </div>

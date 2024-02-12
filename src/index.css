@@ -27,6 +27,10 @@ p{
   background-color: #0C3959  ;
 
 }
+input :focus{
+  border: none !important;
+
+}
 Navbar{
   background-color: #0C3959 !important ;
 }

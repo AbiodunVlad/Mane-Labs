@@ -65,7 +65,7 @@ export function Navigation() {
   );
 
   return (
-    <div className=" fixed top-0 z-30 w-screen border-none ">
+    <div className=" fixed top-0 z-30 w-full border-none ">
       <Navbar
         style={{ backgroundColor: "#0C3959" }}
         className=" h-max max-w-full rounded-none sm:px-4 sm:py-2 px-40 py-4 backdrop-blur-none bg-opacity-none border-none backdrop-filter-none "
@@ -75,7 +75,7 @@ export function Navigation() {
         <img src="./images/Mane.png" width={50} className="rounded-lg"></img>
           <Typography
             as="a"
-            href="#"
+            href="/"
             className="font-medium my-auto px-5"
           >
             MÅNE Labs
@@ -84,11 +84,13 @@ export function Navigation() {
 
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-x-1  sm:hidden">
+            <NavLink to="contact">
+
               <Button
               style={{backgroundColor:"#A8E4F9"}}
                variant="text" size="sm" className=" inline-block">
                 <span>Build your project</span>
-              </Button>
+              </Button></NavLink>
             </div>
             <IconButton
               variant="text"
@@ -132,11 +134,12 @@ export function Navigation() {
         <MobileNav open={openNav} className="hiddem sm:block">
           {navList}
           <div className="flex items-center gap-x-1 ">
+          <NavLink to="contact">
               <Button
               style={{backgroundColor:"#A8E4F9"}}
                variant="text" size="sm" className=" inline-block">
                 <span>Build your project</span>
-              </Button>
+              </Button></NavLink>
             </div>
         </MobileNav>
       </Navbar>
