@@ -8,6 +8,9 @@ import Home from './Pages/Home'
 import Footer from './Components/Footer'
 import AboutUs from './Pages/AboutUs'
 import Contact from './Pages/Contact'
+import Join from './Pages/Join'
+import Projects from './Pages/Projects'
+import ProjectDes from './Pages/ProjectDes'
 function App() {
 
   return (
@@ -18,6 +21,11 @@ function App() {
 <Route path='/' element={<Home/>}/>
 <Route path='/aboutus' element={<AboutUs/>}/>
 <Route path='/contact' element={<Contact/>}/>
+
+<Route path='/joinus' element={<Join/>}/>
+<Route path='/projects' element={<Projects/>}/>
+
+<Route path='/project/:id' element={<ProjectDes />}/>
 
 </Routes>
 <Footer />

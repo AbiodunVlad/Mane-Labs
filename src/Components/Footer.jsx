@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="container px-40 sm:px-10 py-14">
+    <div className="container px-40 sm:px-10 py-14  ">
       <div className="flex">
         <img src="./images/Mane.png" width={50} className="rounded-lg"></img>
         <Typography as="a" href="#" className="font-medium my-auto px-5">
