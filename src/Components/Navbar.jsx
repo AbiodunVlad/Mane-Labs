@@ -27,9 +27,9 @@ export function Navigation() {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <NavLink to="/" className="flex items-center">
           Home
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -37,9 +37,9 @@ export function Navigation() {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <NavLink to="projects" className="flex items-center">
           Projects
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -57,9 +57,9 @@ export function Navigation() {
         color="white"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <NavLink to="joinus" className="flex items-center">
           Join Our Team
-        </a>
+        </NavLink>
       </Typography>
     </ul>
   );
@@ -71,26 +71,36 @@ export function Navigation() {
         className=" h-max max-w-full rounded-none sm:px-4 sm:py-2 px-40 py-4 backdrop-blur-none bg-opacity-none border-none backdrop-filter-none "
       >
         <div className="flex items-center justify-between text-white">
-        <div className="mr-4 cursor-pointer py-1.5 flex">
-        <img src="./images/Mane.png" width={50} className="rounded-lg"></img>
-          <Typography
-            as="a"
-            href="/"
-            className="font-medium my-auto px-5"
-          >
-            MÅNE Labs
-          </Typography></div>
+          <div className="mr-4 cursor-pointer py-1.5 flex ">
+            <NavLink to="/" className="flex">
+              <img
+                src="./images/Mane.png"
+                width={50}
+                className="rounded-lg"
+              ></img>
+
+              <p
+               
+                className="font-bold  px-5 text-white m-auto"
+              >
+                MÅNE Labs
+              </p>
+            </NavLink>
+          </div>
           <div className="mr-4 sm:hidden  ">{navList}</div>
 
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-x-1  sm:hidden">
-            <NavLink to="contact">
-
-              <Button
-              style={{backgroundColor:"#A8E4F9"}}
-               variant="text" size="sm" className=" inline-block">
-                <span>Build your project</span>
-              </Button></NavLink>
+              <NavLink to="contact">
+                <Button
+                  style={{ backgroundColor: "#A8E4F9" }}
+                  variant="text"
+                  size="sm"
+                  className=" inline-block"
+                >
+                  <span>Build your project</span>
+                </Button>
+              </NavLink>
             </div>
             <IconButton
               variant="text"
@@ -134,13 +144,17 @@ export function Navigation() {
         <MobileNav open={openNav} className="hiddem sm:block">
           {navList}
           <div className="flex items-center gap-x-1 ">
-          <NavLink to="contact">
+            <NavLink to="contact">
               <Button
-              style={{backgroundColor:"#A8E4F9"}}
-               variant="text" size="sm" className=" inline-block">
+                style={{ backgroundColor: "#A8E4F9" }}
+                variant="text"
+                size="sm"
+                className=" inline-block"
+              >
                 <span>Build your project</span>
-              </Button></NavLink>
-            </div>
+              </Button>
+            </NavLink>
+          </div>
         </MobileNav>
       </Navbar>
     </div>
